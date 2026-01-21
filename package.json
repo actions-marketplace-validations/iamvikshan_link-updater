@@ -1,7 +1,7 @@
 {
   "name": "links-updater",
   "description": "Automatically updates repository links/keywords and optionally creates PRs",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -25,7 +25,7 @@
   "dependencies": {
     "@actions/core": "^2.0.0",
     "@actions/exec": "^2.0.0",
-    "@actions/github": "^6.0.1",
+    "@actions/github": "^7.0.0",
     "js-yaml": "^4.1.1"
   },
   "devDependencies": {
