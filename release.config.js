@@ -51,13 +51,6 @@ module.exports = {
     ],
 
     [
-      '@semantic-release/npm',
-      {
-        npmPublish: false
-      }
-    ],
-
-    [
       '@semantic-release/github',
       {
         successComment:
@@ -73,7 +66,7 @@ module.exports = {
       '@semantic-release/exec',
       {
         prepareCmd:
-          "sed -i 's|iamvikshan/link-updater@v[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+|iamvikshan/link-updater@v${nextRelease.version}|g' README.md"
+          "sed -i 's|iamvikshan/link-updater@v[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+|iamvikshan/link-updater@v${nextRelease.version}|g' README.md && npm version ${nextRelease.version} --no-git-tag-version"
       }
     ],
 

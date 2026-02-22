@@ -37,11 +37,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.2
         with:
           fetch-depth: 0
 
-      - uses: iamvikshan/link-updater@v1.2.4
+      - uses: iamvikshan/link-updater@v1.2.7
         with:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 ```
